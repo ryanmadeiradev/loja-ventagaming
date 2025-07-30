@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-container {
+    width: 90vw;
+    margin: 3vw auto;
+    min-height: 80vh;
+}
+
+/* ESTILOS DA PÁGINA PRINCIPAL (LOJA) */
+
+.hero-banner {
+    width: 100%;
+    height: 25vw;
+    background-image: url("../images/blackfriday.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 55%;
+    border-bottom: 1px solid black;
+}
+
+.offers-section {
+    width: 70vw;
+    margin: 3vw auto;
+    background-color: #ebebeb;
+    padding: 2vw;
+    border: 0.15vw solid darkorange;
+    border-radius: 0.7vw;
+}
+
+.offers-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkorange;
+    border-radius: 0.7vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+}
+
+.offers-header h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.7vw;
+    margin: 0;
+}
+
+.offers-header img {
+    height: 3vw;
+    margin-left: 1.5vw;
+}
+
+.featured-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5vw;
+}
+
+.featured-item {
+    background-color: white;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-image {
+    width: 100%;
+    height: 12vw;
+    object-fit: contain;
+}
+
+.featured-name {
+    margin: 1vw 0;
+    font-size: 1vw;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.featured-price-old {
+    font-size: 0.9vw;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.featured-price-new {
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: darkorange;
+    margin-bottom: 1vw;
+}
+
+#main-header {
+    display: grid;
+    grid-template-columns: 0.5fr auto 0.5fr;
+    align-items: center;
+    padding: 0 5vw;
+    background-color: black;
+    font-family: 'Bahnschrift', sans-serif;
+    height: 4.5vw;
+}
+
+.header-left {
+    justify-self: start;
+    margin-top: -1vw;
+}
+
+.header-center {
+    justify-self: center;
+    margin-top: -1vw;
+}
+
+.header-right {
+    justify-self: end;
+    margin-top: -1vw;
+
+}
+
+.header-left img {
+    height: 3.5vw;
+}
+
+.header-center img {
+    height: 6.8vw;
+}
+
+#login a {
+    font-size: 1 vw;
+    color: white;
+    text-align: center;
+}
+
+#main-nav {
+    background-color: darkorange;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-item {
+    border: 0.09vw solid black;
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+    line-height: 2.6vw;
+    height: 3vw;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    z-index: 10;
+}
+
+.submenu > li {
+    border: 0.09vw solid black;
+    background-color: darkorange;
+    height: 3vw;
+    line-height: 2.6vw;
+}
+
+.menu-item:hover > .submenu {
+    display: block;
+}
+
+.submenu > li:hover {
+    background-color: black;
+}
+
+.submenu > li:hover > a {
+    color: white;
+}
+
+/* TÍTULOS DE PÁGINA E FILTROS */
+
+.page-title {
+    color: darkorange;
+    background-color: black;
+    text-align: center;
+    font-size: 2.2vw;
+    padding: 1.5vw 0;
+    border-radius: 0.7vw;
+    margin-bottom: 2vw;
+}
+
+/* GRID DE PRODUTOS */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+    gap: 2.5vw;
+    padding: 2vw;
+    border: 0.15vw solid rgb(255, 214, 33);
+    border-radius: 0.7vw;
+    background-color: #ebebebf1;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-image {
+    width: 12vw;
+    height: 12vw;
+    object-fit: contain;
+    margin-bottom: 1vw;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 0.5vw 0;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: #333;
+    margin: 0.5vw 0 1vw 0;
+}
+
+.buy-button {
+    cursor: pointer;
+    width: 12vw;
+    height: 3vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: black;
+    background-color: darkorange;
+    border: 1px solid black;
+    border-radius: 0.3vw;
+    transition: background-color 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #ffaf4d;
+}
+
+/* ESTILOS DA PÁGINA DE PAGAMENTO */
+
+.payment-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    border: 0.15vw solid darkorange;
+    padding: 2vw;
+    border-radius: 1vw;
+}
+
+.payment-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.payment-section {
+    margin-bottom: 2vw;
+}
+
+.payment-section h2 {
+    font-size: 1.8vw;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5vw;
+}
+
+.installment-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vw;
+    font-family: Arial, sans-serif;
+    font-size: 1vw;
+}
+
+.installment-option input[type="text"] {
+    width: 10vw;
+    text-align: right;
+    border: 1px solid #ccc;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+
+.finalize-purchase {
+    width: 100%;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.finalize-purchase .submit-button {
+    width: 30vw;
+    padding: 1.2vw;
+}
+
+#resumo-pedido {
+    max-width: 15%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vw; 
+}
+
+
+/* FORMULÁRIOS (Login, Criar Conta) */
+
+.form-container {
+    max-width: 50vw;
+    margin: 5vw auto;
+    padding: 3vw;
+    border: 2px solid #ff7f04;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: Ebrima, sans-serif;
+}
+
+.form-container h1 {
+    font-size: 2.5vw;
+    color: #ff7f04;
+    margin-bottom: 2vw;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"] {
+    width: 100%;
+    font-size: 1.2vw;
+    padding: 0.8vw;
+    margin: 0.5vw 0;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #808080;
+}
+
+.form-container .submit-button {
+    cursor: pointer;
+    background-color: #ff7f04;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    border: none;
+    font-size: 1.3vw;
+    margin-top: 1.5vw;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.quantity-selector label {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.product-quantity {
+    font-size: 1vw;
+    padding: 0.3vw;
+    border: 1px solid #ccc;
+    border-radius: 0.3vw;
+    background-color: white;
+}
+
+.form-container {
+    max-width: 50vw;
+    margin: 4vw auto;
+    padding: 3vw;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 1vw;
+    font-family: Ebrima, sans-serif;
+    text-align: center;
+}
+
+.form-container h1 {
+    font-size: 2.5vw;
+    color: #ff7f04;
+    margin-bottom: 2vw;
+}
+
+
+.form-group {
+    margin-bottom: 1.5vw;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.form-group {
+    flex: 1; 
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1vw;
+    padding: 0.8vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #ccc;
+}
+
+.text-left {
+    text-align: center;
+}
+
+.radio-label {
+    font-size: 1.1vw;
+    color: #424242;
+    margin-right: 2vw;
+}
+
+.checkbox-group label {
+    font-size: 0.9vw;
+    color: #424242;
+}
+
+.form-hint {
+    font-size: 0.8vw;
+    color: #8b8b8b;
+    text-align: left;
+    margin-top: -1vw;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: #ff7f04;
+    color: white;
+    width: 100%;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    border: none;
+    font-size: 1.3vw;
+    font-weight: bold;
+    margin-top: 1vw;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #e67304;
+}
+
+.form-footer-link {
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+
+.form-footer-link a {
+    color: #ff7f04;
+    font-weight: bold;
+}
+
+.form-link {
+    margin-top: 0.5vw;
+    font-size: 0.9vw;
+}
+
+.form-link a {
+    color: #555;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2vw 0;
+}
+
+.form-label {
+    font-size: 1.1vw;
+    color: #8b8b8b;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.social-login-group {
+    display: flex;
+    gap: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+.social-button {
+    flex: 1;
+    cursor: pointer;
+    padding: 1vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border-radius: 0.3vw;
+    border: 1px solid;
+}
+
+.social-button.facebook {
+    background-color: white;
+    color: #1877F2;
+    border-color: #1877F2;
+}
+
+.social-button.google {
+    background-color: white;
+    color: #DB4437;
+    border-color: #DB4437;
+}
+
+/* RODAPÉ */
+#main-footer {
+    background-color: black;
+    width: 100%;
+    height: 4vw;
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}

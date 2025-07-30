@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - VentaGaming</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body onload="carregarDadosDoPagamento();">
+
+    <header id="main-header">
+        <div class="header-left">
+            <a href="loja.html">
+                <img src="../images/logo.png" alt="Logo VentaGaming Secundário">
+            </a>
+        </div>
+        <div class="header-center">
+            <a href="loja.html">
+                <img src="../images/venta3.png" alt="Logo VentaGaming Principal">
+            </a>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <h1 class="page-title">ÁREA DE PAGAMENTO</h1>
+
+        <div id="resumo-pedido" class="payment-section">
+
+        </div>
+
+        <form class="payment-form" action="loja.html" onsubmit="alert('Compra finalizada com sucesso! Obrigado por comprar na VentaGaming.'); return true;">
+            
+            <div class="payment-column">
+                <section class="payment-section">
+                    <h2>Dados do Pedido</h2>
+                    <label for="total-pedido">Total do Pedido</label>
+                    <input type="text" id="total-pedido" class="form-input" placeholder="R$ 0,00" disabled>
+                </section>
+
+                <section class="payment-section">
+                    <h2>Dados do Cartão</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Nome do Titular *" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Validade - MM/AAAA *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="CVV *" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input full-width" placeholder="Número do Cartão *" required>
+                    </div>
+                </section>
+            </div>
+
+            <div class="payment-column">
+                <section class="payment-section installments">
+                    <h2>Opções de Parcelamento</h2>
+                    
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="1" id="radio-j1" required> <label for="radio-j1" id="label-j1">1x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="2" id="radio-j2" required> <label for="radio-j2" id="label-j2">2x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="3" id="radio-j3" required> <label for="radio-j3" id="label-j3">3x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="4" id="radio-j4" required> <label for="radio-j4" id="label-j4">4x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="5" id="radio-j5" required> <label for="radio-j5" id="label-j5">5x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="6" id="radio-j6" required> <label for="radio-j6" id="label-j6">6x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="7" id="radio-j7" required> <label for="radio-j7" id="label-j7">7x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="8" id="radio-j8" required> <label for="radio-j8" id="label-j8">8x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="9" id="radio-j9" required> <label for="radio-j9" id="label-j9">9x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="10" id="radio-j10" required> <label for="radio-j10" id="label-j10">10x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="11" id="radio-j11" required> <label for="radio-j11" id="label-j11">11x de R$ 0,00</label>
+                    </div>
+                    <div class="installment-option">
+                        <input type="radio" name="parcela" value="12" id="radio-j12" required> <label for="radio-j12" id="label-j12">12x de R$ 0,00</label>
+                    </div>
+                </section>
+            </div>
+
+            <div class="finalize-purchase">
+                <button type="submit" class="submit-button">FINALIZAR COMPRA</button>
+            </div>
+        </form>
+    </main>
+
+    <footer id="main-footer">
+        <p><b>VentaGaming é uma marca registrada de Venta S.A | CNPJ: 00.000.000/0000-00<br>
+           Todos os direitos reservados. Os preços anunciados podem ser alterados sem prévio aviso.</b></p>
+    </footer>
+
+</body>
+</html>

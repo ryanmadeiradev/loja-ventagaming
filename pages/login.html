@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VentaGaming</title>
+
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script src="../js/login.js"></script>
+</head>
+
+<body onload="ChecarOLocalStorage();">
+<header id="main-header">
+    <div class="header-left">
+        <a href="loja.html"> 
+            <img src="../images/logo.png" alt="Logo VentaGaming Secundário">
+        </a>
+    </div>
+
+    <div class="header-center">
+        <a href="loja.html">
+            <img src="../images/venta3.png" alt="Logo VentaGaming Principal">
+        </a>
+    </div>
+    
+    <div class="header-right" id="login">
+        <p style="color:white; font-weight: bold; text-decoration: none;">
+            Faça <a href="login.html" style="color:white; font-weight: bold; text-decoration: none;">LOGIN</a> ou <br> 
+            crie seu <a href="criarconta.html" style="color:white; font-weight: bold; text-decoration: none;">CADASTRO</a>
+        </p>
+    </div>
+</header>
+
+    <main class="page-container">
+        
+        <div class="form-container">
+            <h1>FAZER LOGIN</h1>
+            
+            <form action="loja.html" onsubmit="ChecarOLogin(); return false;">
+                
+                <div class="form-group">
+                    <input type="text" id="email" class="form-input" placeholder="Email, CPF ou CPNJ" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="senha" class="form-input" placeholder="Senha" required>
+                </div>
+                
+                <button type="submit" class="submit-button">ENTRAR</button>
+                
+                <p class="form-link text-right"><a href="#">Esqueceu a senha?</a></p>
+                
+                <hr class="form-divider">
+                
+                <p class="form-label">ACESSAR COM AS REDES SOCIAIS</p>
+
+                <div class="social-login-group">
+                    <button type="button" class="social-button facebook">Facebook</button>
+                    <button type="button" class="social-button google">Google</button>
+                </div>
+
+                <p class="form-footer-link">
+                    Novo na loja? <a href="criarconta.html"><b>CADASTRE-SE</b></a>
+                </p>
+
+            </form>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        <p><b>VentaGaming é uma marca registrada de Venta S.A | CNPJ: 00.000.000/0000-00<br> 
+           Todos os direitos reservados. Os preços anunciados podem ser alterados sem prévio aviso.</b></p>
+    </footer>
+</body>
+</html>

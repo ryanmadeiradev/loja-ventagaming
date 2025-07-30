@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mousepads - VentaGaming</title>
+
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-left">
+            <a href="loja.html"> 
+                <img src="../images/logo.png" alt="Logo VentaGaming Secundário">
+            </a>
+        </div>
+        <div class="header-center">
+            <a href="loja.html">
+                <img src="../images/venta3.png" alt="Logo VentaGaming Principal">
+            </a>
+        </div>
+    <div class="header-right" id="login">
+        <p style="color:white; font-weight: bold; text-decoration: none;">
+            Faça <a href="login.html" style="color:white; font-weight: bold; text-decoration: none;">LOGIN</a> ou <br> 
+            crie seu <a href="criarconta.html" style="color:white; font-weight: bold; text-decoration: none;">CADASTRO</a>
+        </p>
+    </div>
+</header>
+
+    <nav id="main-nav">
+        <ul id="menu">
+            <li class="menu-item">
+                HARDWARE
+                <ul class="submenu">
+                    <li><a href="placadevideo.html"><b>Placa de Vídeo</b></a></li>
+                    <li><a href="processador.html"><b>Processador</b></a></li>
+                    <li><a href="memoriaram.html"><b>Memória RAM</b></a></li>
+                    <li><a href="armazenamento.html"><b>Armazenamento</b></a></li>
+                    <li><a href="placamae.html"><b>Placa-Mãe</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                PERIFÉRICOS
+                <ul class="submenu">
+                    <li><a href="mouse.html"><b>Mouse</b></a></li>
+                    <li><a href="headset.html"><b>Headset</b></a></li>
+                    <li><a href="teclado.html"><b>Teclado</b></a></li>
+                    <li><a href="mousepad.html"><b>Mousepad</b></a></li>
+                    <li><a href="gabinete.html"><b>Gabinete</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                REFRIGERAÇÃO
+                <ul class="submenu">
+                    <li><a href="watercooler.html"><b>Water Cooler</b></a></li>
+                    <li><a href="coolerbox.html"><b>Cooler Box</b></a></li>
+                    <li><a href="aircooler.html"><b>Air Cooler</b></a></li>
+                    <li><a href="fans.html"><b>Fans</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                ESPAÇO GAMER
+                <ul class="submenu">
+                    <li><a href="mesa.html"><b>Mesa</b></a></li>
+                    <li><a href="cadeira.html"><b>Cadeira</b></a></li>
+                    <li><a href="monitor.html"><b>Monitor</b></a></li>
+                    <li><a href="suporte.html"><b>Suporte</b></a></li>
+                    <li><a href="poltrona.html"><b>Poltrona</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                GAMES
+                <ul class="submenu">
+                    <li><a href="nintendo.html"><b>Nintendo</b></a></li>
+                    <li><a href="playstation.html"><b>PlayStation</b></a></li>
+                    <li><a href="xbox.html"><b>Xbox</b></a></li>
+                    <li><a href="simuladores.html"><b>Simuladores</b></a></li>
+                    <li><a href="videogames.html"><b>VideoGames Retrô</b></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <h1 class="page-title">Mousepads</h1>
+
+        <section class="product-grid">
+            
+            <div class="product-item">
+                <img class="product-image" src="../images/razer.png" alt="Mousepad Gamer Razer Goliathus Cosmic">
+                <p class="product-name">Mousepad Gamer Razer Goliathus Cosmic</p>
+                <p class="product-price">R$ 24,99</p>
+                <div class="quantity-selector">
+                    <label for="qtd-pad-1">Qtd:</label>
+                    <select class="product-quantity" id="qtd-pad-1">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    </select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Mousepad Gamer Razer Goliathus Cosmic', 24.99, '../images/razer.png', 'qtd-pad-1')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/avalanche.png" alt="Mousepad Gamer Husky Gaming Avalanche">
+                <p class="product-name">Mousepad Gamer Husky Gaming Avalanche</p>
+                <p class="product-price">R$ 29,99</p>
+                <div class="quantity-selector">
+                    <label for="qtd-pad-2">Qtd:</label>
+                    <select class="product-quantity" id="qtd-pad-2">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    </select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Mousepad Gamer Husky Gaming Avalanche', 29.99, '../images/avalanche.png', 'qtd-pad-2')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/g640.png" alt="Mousepad Logitech G640 Grande">
+                <p class="product-name">Mousepad Logitech G640 Grande</p>
+                <p class="product-price">R$ 99,99</p>
+                <div class="quantity-selector">
+                    <label for="qtd-pad-3">Qtd:</label>
+                    <select class="product-quantity" id="qtd-pad-3">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    </select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Mousepad Logitech G640 Grande', 99.99, '../images/g640.png', 'qtd-pad-3')">COMPRAR</button>
+            </div>
+            
+            </section>
+    </main>
+
+    <footer id="main-footer">
+        <p><b>VentaGaming é uma marca registrada de Venta S.A | CNPJ: 00.000.000/0000-00<br> 
+           Todos os direitos reservados. Os preços anunciados podem ser alterados sem prévio aviso.</b></p>
+    </footer>
+    
+</body>
+</html>

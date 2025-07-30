@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headsets - VentaGaming</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-left">
+            <a href="loja.html"> 
+                <img src="../images/logo.png" alt="Logo VentaGaming Secundário">
+            </a>
+        </div>
+        <div class="header-center">
+            <a href="loja.html">
+                <img src="../images/venta3.png" alt="Logo VentaGaming Principal">
+            </a>
+        </div>
+    <div class="header-right" id="login">
+        <p style="color:white; font-weight: bold; text-decoration: none;">
+            Faça <a href="login.html" style="color:white; font-weight: bold; text-decoration: none;">LOGIN</a> ou <br> 
+            crie seu <a href="criarconta.html" style="color:white; font-weight: bold; text-decoration: none;">CADASTRO</a>
+        </p>
+    </div>
+</header>
+
+    <nav id="main-nav">
+        <ul id="menu">
+            <li class="menu-item">
+                HARDWARE
+                <ul class="submenu">
+                    <li><a href="placadevideo.html"><b>Placa de Vídeo</b></a></li>
+                    <li><a href="processador.html"><b>Processador</b></a></li>
+                    <li><a href="memoriaram.html"><b>Memória RAM</b></a></li>
+                    <li><a href="armazenamento.html"><b>Armazenamento</b></a></li>
+                    <li><a href="placamae.html"><b>Placa-Mãe</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                PERIFÉRICOS
+                <ul class="submenu">
+                    <li><a href="mouse.html"><b>Mouse</b></a></li>
+                    <li><a href="headset.html"><b>Headset</b></a></li>
+                    <li><a href="teclado.html"><b>Teclado</b></a></li>
+                    <li><a href="mousepad.html"><b>Mousepad</b></a></li>
+                    <li><a href="gabinete.html"><b>Gabinete</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                REFRIGERAÇÃO
+                <ul class="submenu">
+                    <li><a href="watercooler.html"><b>Water Cooler</b></a></li>
+                    <li><a href="coolerbox.html"><b>Cooler Box</b></a></li>
+                    <li><a href="aircooler.html"><b>Air Cooler</b></a></li>
+                    <li><a href="fans.html"><b>Fans</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                ESPAÇO GAMER
+                <ul class="submenu">
+                    <li><a href="mesa.html"><b>Mesa</b></a></li>
+                    <li><a href="cadeira.html"><b>Cadeira</b></a></li>
+                    <li><a href="monitor.html"><b>Monitor</b></a></li>
+                    <li><a href="suporte.html"><b>Suporte</b></a></li>
+                    <li><a href="poltrona.html"><b>Poltrona</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                GAMES
+                <ul class="submenu">
+                    <li><a href="nintendo.html"><b>Nintendo</b></a></li>
+                    <li><a href="playstation.html"><b>PlayStation</b></a></li>
+                    <li><a href="xbox.html"><b>Xbox</b></a></li>
+                    <li><a href="simuladores.html"><b>Simuladores</b></a></li>
+                    <li><a href="videogames.html"><b>VideoGames Retrô</b></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <h1 class="page-title">Headsets</h1>
+        <section class="product-grid">
+            
+            <div class="product-item">
+                <img class="product-image" src="../images/H2002D.png" alt="Headset Gamer Havit H2002D">
+                <p class="product-name">Headset Gamer Havit H2002D Drivers 53mm P3</p>
+                <p class="product-price">R$ 189,00</p>
+                <div class="quantity-selector">
+                    <label for="qtd-hs-1">Qtd:</label>
+                    <select class="product-quantity" id="qtd-hs-1"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Headset Gamer Havit H2002D', 189.00, '../images/H2002D.png', 'qtd-hs-1')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/cloudflight.png" alt="Headset Sem Fio Gamer HyperX Cloud Flight">
+                <p class="product-name">Headset Sem Fio Gamer HyperX Cloud Flight</p>
+                <p class="product-price">R$ 599,99</p>
+                <div class="quantity-selector">
+                    <label for="qtd-hs-2">Qtd:</label>
+                    <select class="product-quantity" id="qtd-hs-2"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Headset Sem Fio Gamer HyperX Cloud Flight', 599.99, '../images/cloudflight.png', 'qtd-hs-2')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/G432.png" alt="Headset Gamer Logitech G432">
+                <p class="product-name">Headset Gamer Logitech G432 entr. P2 e P3</p>
+                <p class="product-price">R$ 279,99</p>
+                <div class="quantity-selector">
+                    <label for="qtd-hs-3">Qtd:</label>
+                    <select class="product-quantity" id="qtd-hs-3"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Headset Gamer Logitech G432', 279.99, '../images/G432.png', 'qtd-hs-3')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/300.png" alt="Headset Gamer JBL Quantum 300 P2">
+                <p class="product-name">Headset Gamer JBL Quantum 300 P2</p>
+                <p class="product-price">R$ 359,00</p>
+                <div class="quantity-selector">
+                    <label for="qtd-hs-4">Qtd:</label>
+                    <select class="product-quantity" id="qtd-hs-4"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Headset Gamer JBL Quantum 300 P2', 359.00, '../images/300.png', 'qtd-hs-4')">COMPRAR</button>
+            </div>
+
+            <div class="product-item">
+                <img class="product-image" src="../images/CloudCore.png" alt="Headset Gamer HyperX Cloud Core P3">
+                <p class="product-name">Headset Gamer HyperX Cloud Core P3</p>
+                <p class="product-price">R$ 299,00</p>
+                <div class="quantity-selector">
+                    <label for="qtd-hs-5">Qtd:</label>
+                    <select class="product-quantity" id="qtd-hs-5"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+                <button class="buy-button" onclick="comprarProduto('Headset Gamer HyperX Cloud Core P3', 299.00, '../images/CloudCore.png', 'qtd-hs-5')">COMPRAR</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p><b>VentaGaming é uma marca registrada de Venta S.A | CNPJ: 00.000.000/0000-00<br> 
+           Todos os direitos reservados. Os preços anunciados podem ser alterados sem prévio aviso.</b></p>
+    </footer>
+</body>
+</html>
