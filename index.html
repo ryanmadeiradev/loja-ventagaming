@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentaGaming - Sua Loja de Hardware e Periféricos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-left"><a href="index.html"><img src="images/logo.png" alt="Logo VentaGaming Secundário"></a></div>
+        <div class="header-center"><a href="index.html"><img src="images/venta3.png" alt="Logo VentaGaming Principal"></a></div>
+    <div class="header-right" id="login">
+        <p style="color:white; font-weight: bold; text-decoration: none;">
+            Faça <a href="pages/login.html" style="color:white; font-weight: bold; text-decoration: none;">LOGIN</a> ou <br>
+            crie seu <a href="pages/criarconta.html" style="color:white; font-weight: bold; text-decoration: none;">CADASTRO</a>
+        </p>
+    </div>
+</header>
+
+    <nav id="main-nav">
+        <ul id="menu">
+            <li class="menu-item">
+                HARDWARE
+                <ul class="submenu">
+                    <li><a href="pages/placadevideo.html"><b>Placa de Vídeo</b></a></li>
+                    <li><a href="pages/processador.html"><b>Processador</b></a></li>
+                    <li><a href="pages/memoriaram.html"><b>Memória RAM</b></a></li>
+                    <li><a href="pages/armazenamento.html"><b>Armazenamento</b></a></li>
+                    <li><a href="pages/placamae.html"><b>Placa-Mãe</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                PERIFÉRICOS
+                <ul class="submenu">
+                    <li><a href="pages/mouse.html"><b>Mouse</b></a></li>
+                    <li><a href="pages/headset.html"><b>Headset</b></a></li>
+                    <li><a href="pages/teclado.html"><b>Teclado</b></a></li>
+                    <li><a href="pages/mousepad.html"><b>Mousepad</b></a></li>
+                    <li><a href="pages/gabinete.html"><b>Gabinete</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                REFRIGERAÇÃO
+                <ul class="submenu">
+                    <li><a href="pages/watercooler.html"><b>Water Cooler</b></a></li>
+                    <li><a href="pages/coolerbox.html"><b>Cooler Box</b></a></li>
+                    <li><a href="pages/aircooler.html"><b>Air Cooler</b></a></li>
+                    <li><a href="pages/fans.html"><b>Fans</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                ESPAÇO GAMER
+                <ul class="submenu">
+                    <li><a href="pages/mesa.html"><b>Mesa</b></a></li>
+                    <li><a href="pages/cadeira.html"><b>Cadeira</b></a></li>
+                    <li><a href="pages/monitor.html"><b>Monitor</b></a></li>
+                    <li><a href="pages/suporte.html"><b>Suporte</b></a></li>
+                    <li><a href="pages/poltrona.html"><b>Poltrona</b></a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                GAMES
+                <ul class="submenu">
+                    <li><a href="pages/nintendo.html"><b>Nintendo</b></a></li>
+                    <li><a href="pages/playstation.html"><b>PlayStation</b></a></li>
+                    <li><a href="pages/xbox.html"><b>Xbox</b></a></li>
+                    <li><a href="pages/simuladores.html"><b>Simuladores</b></a></li>
+                    <li><a href="pages/videogames.html"><b>VideoGames Retrô</b></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-banner"></section>
+        <section class="offers-section">
+            <div class="offers-header">
+                <h2>Ofertas RELÂMPAGO!</h2>
+                <img src="images/relogio.png" alt="Ícone de relógio">
+            </div>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <img class="featured-image" src="images/r75700x.png" alt="Ryzen 7 5700x">
+                    <p class="featured-name">Ryzen 7 5700x 3.4GHz (4.6GHz Max Turbo)</p>
+                    <p class="featured-price-old">R$ 1.249,90</p>
+                    <p class="featured-price-new">R$ 1.100,00</p>
+                    <button class="buy-button" onclick="comprarProduto('Ryzen 7 5700x', 1100.00, 'images/r75700x.png', null)">COMPRAR</button>
+                </div>
+                <div class="featured-item">
+                    <img class="featured-image" src="images/1650.png" alt="Geforce GTX 1650">
+                    <p class="featured-name">Geforce GTX 1650 PNY SG 4GB GDDR5</p>
+                    <p class="featured-price-old">R$ 1.029,00</p>
+                    <p class="featured-price-new">R$ 950,00</p>
+                    <button class="buy-button" onclick="comprarProduto('Geforce GTX 1650', 950.00, 'images/1650.png', null)">COMPRAR</button>
+                </div>
+                <div class="featured-item">
+                    <img class="featured-image" src="images/ramcorsair.png" alt="Memória RAM Corsair 64GB">
+                    <p class="featured-name">Mem. RAM Corsair DDR5 5600Mhz 64GB</p>
+                    <p class="featured-price-old">R$ 3.199,48</p>
+                    <p class="featured-price-new">R$ 2.899,90</p>
+                    <button class="buy-button" onclick="comprarProduto('Mem. RAM Corsair DDR5 64GB', 2899.90, 'images/ramcorsair.png', null)">COMPRAR</button>
+                </div>
+                <div class="featured-item">
+                    <img class="featured-image" src="images/mousehyperx.png" alt="Mouse HyperX Pulsefire">
+                    <p class="featured-name">Mouse HyperX 6200 DPI Pulsefire Core RGB</p>
+                    <p class="featured-price-old">R$ 109,00</p>
+                    <p class="featured-price-new">R$ 89,99</p>
+                    <button class="buy-button" onclick="comprarProduto('Mouse HyperX 6200 DPI', 89.99, 'images/mousehyperx.png', null)">COMPRAR</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer">
+        <p><b>VentaGaming é uma marca registrada de Venta S.A | CNPJ: 00.000.000/0000-00<br>
+           Todos os direitos reservados. Os preços anunciados podem ser alterados sem prévio aviso.</b></p>
+    </footer>
+</body>
+</html>
